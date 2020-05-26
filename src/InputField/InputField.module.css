@@ -1,0 +1,30 @@
+.inputField {
+    margin: 1em 0;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #3466c0;
+    width: 100%;
+}
+
+.invalid {
+    border-bottom-color: red;
+}
+
+.label {
+    position: absolute;
+    color: gray;
+}
+
+.uplabel {
+    margin-top: -.5em;
+    font-size: .6em
+}
+
+.error {
+    position: absolute;
+    margin: 0;
+    font-size: .8em;
+    color: red;
+}
