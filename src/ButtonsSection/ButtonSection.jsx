@@ -29,7 +29,7 @@ const ButtonSection = () => {
                 <Button text='Back' onClick={() => toggleSection(sectionsValues[sectionsValues.indexOf(currentSection) - 1])}/>
             }
             <Button text={isLastSection() ? 'Submit' : 'Next'}  onClick={handleNextActoin} disabled={!isSectionValid}/>
-            <SuccessModal isOpen={showSuccess}/>
+            <SuccessModal isOpen={showSuccess} closeDialog={() => setShowSuccess(false)}/>
         </div>
     )
 }

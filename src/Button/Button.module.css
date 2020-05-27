@@ -1,6 +1,6 @@
 .button {
     color: whitesmoke;
-    background-color: #3466c0;
+    background-color: var(--blue);
     border-radius: .5em;
     width: 6em;
     height: 3em;
@@ -12,7 +12,7 @@
 }
 
 .button:active {
-    background-color: #2b5092;
+    background-color: var(--dark-blue);
 }
 
 .button:disabled {

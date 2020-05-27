@@ -1,10 +1,21 @@
+.background {
+    opacity: 0;
+    top: 0;
+    width:100vw;
+    height:100vh;
+    position:absolute;
+}
+
 .success {
     top: 6em;
     width: 5em;
     padding: 4em;
-    background-color: whitesmoke;
+    background-color: var(--blue);
+    color: whitesmoke;
+    border: none;
+    border-radius: 2em;
     text-align: center;
-    color: limegreen;
     font-size: 20px;
     z-index: 10;
+    box-shadow: -3px -3px 20px 4px gray;
 }

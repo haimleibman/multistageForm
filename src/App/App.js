@@ -5,8 +5,6 @@ import InputsSection from '../InputSection/InputSection';
 import ButtonSection from '../ButtonsSection/ButtonSection';
 import ProgressBar from '../ProcessBar/ProcessBar';
 import { RecoilRoot } from 'recoil';
-import Button from '../Button/Button';
-import Portal from '../Portal/Portal';
 
 export const SectionContext = createContext({
   currentSection: sections.personal,

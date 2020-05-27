@@ -1,13 +1,12 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import styles from './SuccessModal.module.css';
-import classNames from 'classnames';
-import Portal from '../Portal/Portal';
 
 const SuccessModal = (props) => {
     return (
-        <Portal>
+        <>
+        {props.isOpen && <div className={styles.background} onClick={() => props.closeDialog()}/>}
             <dialog className={styles.success} open={props.isOpen}>Success!</dialog>
-        </Portal>
+            </>
     )
 }
 
