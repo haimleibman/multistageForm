@@ -13,8 +13,8 @@ const ProcessBar = () => {
             {
                 return (
                     <Fragment key={index}>
-                    <Step index={index} text={section}/>
-                    {index !== (sectionsValues.length - 1) && <div className={styles.path}></div>}
+                        <Step index={index} text={section}/>
+                        {index !== (sectionsValues.length - 1) && <div className={styles.path}></div>}
                     </Fragment>
                 )
             })}

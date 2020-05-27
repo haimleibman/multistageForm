@@ -3,7 +3,7 @@ import InputField from '../InputField/InputField';
 import styles from './InputSection.module.css';
 import { SectionContext } from '../App/App';
 import inputs from './inputs';
-import Checkbox from '../Ceckbox/Checkpox';
+import Checkbox from '../Checkbox/Checkpox';
 
 const InputsSection = () => {
     const {currentSection} = useContext(SectionContext);

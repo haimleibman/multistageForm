@@ -1,14 +1,14 @@
 .background {
     opacity: 0;
     top: 0;
-    width:100vw;
-    height:100vh;
-    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
 }
 
 .success {
     top: 6em;
-    width: 5em;
+    width: 10em;
     padding: 4em;
     background-color: var(--blue);
     color: whitesmoke;
@@ -17,5 +17,5 @@
     text-align: center;
     font-size: 20px;
     z-index: 10;
-    box-shadow: -3px -3px 20px 4px gray;
+    box-shadow: -3px -3px 20px -2px grey;
 }

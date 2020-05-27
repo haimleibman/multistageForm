@@ -16,6 +16,8 @@
 
 .name {
     color: gray;
+    width: 10em;
+    text-align: center;
 }
 
 .current > .index{

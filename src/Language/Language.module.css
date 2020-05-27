@@ -1,0 +1,16 @@
+.selectContainer {
+    width: 100%;
+    text-align: end;
+}
+
+.select {
+    margin-bottom: 2em;
+    color: gray;
+    border: none;
+    font-size: .7em;
+}
+
+.option {
+    background-color: white;
+    color: var(--blue);
+}

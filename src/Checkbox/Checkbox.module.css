@@ -9,6 +9,21 @@
   font-size: .8em;
 }
 
+.rtl {
+  padding-right: 1.95em;
+  padding-left: 0;
+}
+
+.rtl::before {
+  left: 0;
+  right: 1px;
+}
+
+.rtl::after {
+  left: 0;
+  right: 1px;
+}
+
 .checkboxLabel:before {
   content: '';
   position: absolute;
@@ -16,7 +31,7 @@
   top: 2px;
   width: 1em;
   height: 1em;
-  border: 1px solid #3466c0;
+  border: 1px solid var(--blue);
   background: whitesmoke;
   border-radius: 4px;
 }
@@ -34,7 +49,7 @@
 }
 
 .checkbox:checked + .checkboxLabel::before {
-  background-color: #3466c0;
+  background-color: var(--blue);
 }
 
 .checkbox:not(:checked) + .checkboxLabel::after {
