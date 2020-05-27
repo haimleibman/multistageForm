@@ -1,19 +1,19 @@
 const personal = {
-    firstName: 'first name',
-    lastName: 'last name',
-    title: 'title'
+    firstName: 'First name',
+    lastName: 'Last name',
+    title: 'Title'
 }
 
 const address = {
-    country: 'country',
-    city: 'city',
-    street: 'street'
+    country: 'Country',
+    city: 'City',
+    street: 'Street'
 }
 
 const contactability = {
-    email: 'email',
-    phone: 'phone',
-    optin: 'optin'
+    email: 'Email',
+    phone: 'Phone',
+    optin: 'Optin'
 }
 
 export {personal, address, contactability};

@@ -8,6 +8,7 @@
     align-self: center;
     justify-self: flex-end;
     margin: 0, auto;
+    cursor: pointer;
 }
 
 .button:active {
@@ -17,4 +18,5 @@
 .button:disabled {
     color: gray;
     background-color: lightgray;
+    cursor: initial;
 }

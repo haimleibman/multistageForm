@@ -1,0 +1,10 @@
+.success {
+    top: 6em;
+    width: 5em;
+    padding: 4em;
+    background-color: whitesmoke;
+    text-align: center;
+    color: limegreen;
+    font-size: 20px;
+    z-index: 10;
+}

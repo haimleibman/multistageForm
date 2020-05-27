@@ -1,0 +1,48 @@
+.checkbox {
+  display: none;
+}
+
+.checkboxLabel {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+  font-size: .8em;
+}
+
+.checkboxLabel:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 2px;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #3466c0;
+  background: whitesmoke;
+  border-radius: 4px;
+}
+
+.checkboxLabel::after {
+  content: '\2713\0020';
+  position: absolute;
+  top: .15em;
+  left: .22em;
+  font-size: 1.2em;
+  line-height: 0.8;
+  color: whitesmoke;
+  transition: all .2s;
+  font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+}
+
+.checkbox:checked + .checkboxLabel::before {
+  background-color: #3466c0;
+}
+
+.checkbox:not(:checked) + .checkboxLabel::after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.checkbox:checked + .checkboxLabel::after {
+  opacity: 1;
+  transform: scale(1);
+}

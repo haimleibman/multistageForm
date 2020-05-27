@@ -1,9 +1,9 @@
 
 
 const sections = {
-    personal: 'personal',
-    address: 'address',
-    contactability: 'contactability'
+    personal: 'Personal',
+    address: 'Address',
+    contactability: 'Contactability'
 }
 
 export {sections};

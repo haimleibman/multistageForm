@@ -1,5 +1,6 @@
 .inputField {
     margin: 1em 0;
+    cursor: text;
 }
 
 .input {
@@ -15,11 +16,17 @@
 .label {
     position: absolute;
     color: gray;
+    cursor: text;
 }
 
 .uplabel {
-    margin-top: -.5em;
-    font-size: .6em
+    margin-top: -.8em;
+    margin-left: .5em;
+    font-size: .8em;
+}
+
+.checkboxLable {
+    font-size: .9em;
 }
 
 .error {
