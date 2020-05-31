@@ -10,11 +10,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background-image: url(https://picsum.photos/1000/500);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 
 * {
