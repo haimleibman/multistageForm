@@ -1,12 +1,10 @@
-import React, { Fragment, useContext } from 'react';
+import React, { Fragment } from 'react';
 import styles from './ProcessBar.module.css';
-import classNames from 'classnames';
 
 import { sections } from '../sharedModels/sections.model';
-import { SectionContext } from '../App/App';
+import Step from '../Step/Step';
 
 const ProcessBar = () => {
-    const {currentSection} = useContext(SectionContext);
     const sectionsValues = Object.values(sections);
 
     return (
@@ -15,7 +13,7 @@ const ProcessBar = () => {
             {
                 return (
                     <Fragment key={index}>
-                        <p className={classNames(styles.section, {[styles.current]: section === currentSection})}>{section}</p>
+                        <Step text={section}/>
                         {index !== (sectionsValues.length - 1) && <div className={styles.path}></div>}
                     </Fragment>
                 )

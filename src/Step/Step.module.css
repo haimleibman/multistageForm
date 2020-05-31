@@ -1,0 +1,13 @@
+.step {
+    color: whitesmoke;
+    background-color: gray;
+    border-radius: 2em;
+    width: max-content;
+    font-size: .9em;
+    padding: 0 .5em;
+    margin: 0;
+}
+
+.current {
+    background-color: var(--blue);
+}
