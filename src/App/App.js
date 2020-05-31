@@ -27,7 +27,6 @@ function App() {
   const [isRtl, setIsRtl] = useState(false)
 
   useEffect(() => {
-    console.log(currentLanguage)
     setIsRtl(currentLanguage === 'Hebrew');
   }, [currentLanguage]);
   

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './SuccessModal.module.css';
-import useHebrewSwitcher from '../sharedModels/HebrewSwitcher';
+import useLanguageSwitcher from '../sharedModels/LanguageSwitcher';
 
 const SuccessModal = (props) => {
-    const SuccessMessage = useHebrewSwitcher('The information was successfully absorbed!')
+    const SuccessMessage = useLanguageSwitcher('The information was successfully absorbed!')
 
     return (
         <>

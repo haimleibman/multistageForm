@@ -4,6 +4,7 @@ import { LanguageContext } from '../App/App';
 
 const Language = (props) => {
     const {toggleLanguage} = useContext(LanguageContext);
+    
     const handleChange = (event) => {
         toggleLanguage(event.target.value)
     }

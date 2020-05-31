@@ -7,7 +7,7 @@ import classNames from 'classnames';
 import { Store } from '../Store/Store';
 import { useRecoilValue } from 'recoil';
 import SuccessModal from '../SuccesModal/SuccessModal';
-import useHebrewSwitcher from '../sharedModels/HebrewSwitcher';
+import useLanguageSwitcher from '../sharedModels/LanguageSwitcher';
 
 const ButtonSection = () => {
     const [showSuccess, setShowSuccess] = useState(false);
@@ -15,9 +15,9 @@ const ButtonSection = () => {
     const {currentLanguage} = useContext(LanguageContext);
     const isSectionValid = useRecoilValue(Store[currentSection]);
 
-    const back = useHebrewSwitcher('Back');
-    const Next = useHebrewSwitcher('Next');
-    const Submit = useHebrewSwitcher('Submit');
+    const back = useLanguageSwitcher('Back');
+    const Next = useLanguageSwitcher('Next');
+    const Submit = useLanguageSwitcher('Submit');
     
     const sectionsValues = Object.values(sections);
 

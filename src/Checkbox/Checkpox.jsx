@@ -3,14 +3,14 @@ import styles from './Checkbox.module.css';
 import classNames from 'classnames';
 import { useRecoilState } from 'recoil';
 import { Store } from '../Store/Store';
-import useHebrewSwitcher from '../sharedModels/HebrewSwitcher';
+import useLanguageSwitcher from '../sharedModels/LanguageSwitcher';
 import { LanguageContext } from '../App/App';
 
 const Checkbox = (props) => {
     const [value, setValue] = useRecoilState(Store[props.name]);
     const {currentLanguage} = useContext(LanguageContext);
     const inputRef = useRef(null);
-    const text = useHebrewSwitcher(props.text);
+    const text = useLanguageSwitcher(props.text);
 
     const handleChange = (event) => {
         setValue(event.target.checked);
