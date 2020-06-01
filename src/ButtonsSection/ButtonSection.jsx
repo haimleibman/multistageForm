@@ -15,9 +15,7 @@ const ButtonSection = () => {
     const {currentLanguage} = useContext(LanguageContext);
     const isSectionValid = useRecoilValue(Store[currentSection]);
 
-    const back = useLanguageSwitcher('Back');
-    const Next = useLanguageSwitcher('Next');
-    const Submit = useLanguageSwitcher('Submit');
+    const [back, Next, Submit] = useLanguageSwitcher(['Back', 'Next','Submit']);
     
     const sectionsValues = Object.values(sections);
 

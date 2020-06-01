@@ -9,14 +9,21 @@ const useLanguageSwitcher = (initialText) => {
         const switchLanguage = async () => {
             if (currentLanguage !== 'English' && initialText) {
                 const lang = await import(`./${currentLanguage}.lang.json`);
-                
-                setText(lang[initialText]);
+
+                if (Array.isArray(initialText)) {
+                    const modifiedText = initialText.map(_ => lang[_]);
+                    
+                    setText(modifiedText);
+                } else
+                    setText(lang[initialText]);
             } else 
                 setText(initialText);
         }
 
         switchLanguage();
-    },[currentLanguage, initialText]);
+    // Because of comparison issue at useEffect.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[currentLanguage]);
 
     return text;
 }
