@@ -1,4 +1,7 @@
 .app {
+  display: grid;
+  grid-template-areas: "header" "navigator" "form" "buttons";
+  grid-row-gap: 1em;
   width: 20em;
   margin: auto;
   padding: 2em;

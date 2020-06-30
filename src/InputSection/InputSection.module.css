@@ -1,8 +1,5 @@
 .formSection {
+    grid-area: form;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    margin: 3em auto;
-    height: 10em;
 }

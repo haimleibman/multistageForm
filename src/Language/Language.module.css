@@ -1,5 +1,5 @@
 .selectContainer {
-    width: 100%;
+    grid-area: header;
     text-align: end;
 }
 
